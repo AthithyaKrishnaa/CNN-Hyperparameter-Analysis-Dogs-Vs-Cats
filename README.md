@@ -80,7 +80,7 @@ SETTINGS = {
 ![Low Config Training Graphs](https://github.com/AthithyaKrishnaa/CNN-Hyperparameter-Analysis-Dogs-Vs-Cats/blob/main/low_graph.png)
 
 #### Prediction Results
-![Low Config Predictions](op-low-result.jpg)
+![Low Config Predictions](https://github.com/AthithyaKrishnaa/CNN-Hyperparameter-Analysis-Dogs-Vs-Cats/blob/main/op-low-result.png)
 
 **Analysis:** 
 - ❌ **Underfitted** - Learning rate too conservative for short training period
@@ -104,10 +104,10 @@ SETTINGS = {
 ```
 
 #### Training Progress
-![Medium Config Training Graphs](medium_graph.jpg)
+![Medium Config Training Graphs]([medium_graph.jpg](https://github.com/AthithyaKrishnaa/CNN-Hyperparameter-Analysis-Dogs-Vs-Cats/blob/main/medium_graph.png))
 
 #### Prediction Results
-![Medium Config Predictions](op-medium-results.jpg)
+![Medium Config Predictions](https://github.com/AthithyaKrishnaa/CNN-Hyperparameter-Analysis-Dogs-Vs-Cats/blob/main/op-medium-results.png)
 
 **Analysis:**
 - ✅ **Optimal Balance** - Best configuration for this task
@@ -133,10 +133,10 @@ SETTINGS = {
 ```
 
 #### Training Progress
-![High Config Training Graphs](high-_graph.jpg)
+![High Config Training Graphs](https://github.com/AthithyaKrishnaa/CNN-Hyperparameter-Analysis-Dogs-Vs-Cats/blob/main/high_graph.png)
 
 #### Prediction Results
-![High Config Predictions](op-high-results.jpg)
+![High Config Predictions]([op-high-results.jpg](https://github.com/AthithyaKrishnaa/CNN-Hyperparameter-Analysis-Dogs-Vs-Cats/blob/main/op-high-results.png))
 
 **Analysis:**
 - ⚠️ **Fast but Unstable** - High learning rate causes volatility
