@@ -256,6 +256,6 @@ callbacks = [
 **Athithya Krishnaa M**  
 - GitHub: [@AthithyaKrishnaa](https://github.com/AthithyaKrishnaa)
 - LinkedIn: [Connect with me](linkedin.com/in/athithya-krishnaa-4bbba0295)
-- 
+
 **⭐ Star this repository if you find it helpful!**
 
