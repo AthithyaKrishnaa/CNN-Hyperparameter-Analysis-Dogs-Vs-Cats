@@ -104,7 +104,7 @@ SETTINGS = {
 ```
 
 #### Training Progress
-![Medium Config Training Graphs]([medium_graph.jpg](https://github.com/AthithyaKrishnaa/CNN-Hyperparameter-Analysis-Dogs-Vs-Cats/blob/main/medium_graph.png))
+![Medium Config Training Graphs](https://github.com/AthithyaKrishnaa/CNN-Hyperparameter-Analysis-Dogs-Vs-Cats/blob/main/medium_graph.png)
 
 #### Prediction Results
 ![Medium Config Predictions](https://github.com/AthithyaKrishnaa/CNN-Hyperparameter-Analysis-Dogs-Vs-Cats/blob/main/op-medium-results.png)
