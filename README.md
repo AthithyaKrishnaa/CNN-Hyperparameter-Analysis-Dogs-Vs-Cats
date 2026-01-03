@@ -4,7 +4,7 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1NLYmXrofGD9TDMw6ZVNkJJjJBZwrIjvo?usp=sharing)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.19.0-FF6F00?logo=tensorflow)](https://www.tensorflow.org/)
 [![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)](https://www.python.org/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 
 A comprehensive deep learning study exploring the impact of hyperparameter configurations on CNN performance for binary image classification (Cats vs Dogs). This project systematically analyzes three distinct training configurations to identify optimal settings for balancing training efficiency and model generalization.
 
