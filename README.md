@@ -150,67 +150,6 @@ SETTINGS = {
 **Key Observation:** While achieving competitive accuracy, the validation loss instability indicates potential issues with generalization in production scenarios. The large loss spike demonstrates the risk of aggressive learning rates.
 
 ---
-
-## 🏗️ Model Architecture
-
-Custom CNN architecture with progressive feature extraction:
-
-```python
-Model: "Sequential CNN"
-_________________________________________________________________
-Input Layer: (180, 180, 3)
-_________________________________________________________________
-
-CNN Block 1:
-├── Conv2D(32, 3×3, ReLU, same padding)
-├── Conv2D(32, 3×3, ReLU, same padding)
-├── BatchNormalization()
-├── MaxPooling2D(2×2)
-└── Dropout(0.10)
-
-CNN Block 2:
-├── Conv2D(64, 3×3, ReLU, same padding)
-├── Conv2D(64, 3×3, ReLU, same padding)
-├── BatchNormalization()
-├── MaxPooling2D(2×2)
-└── Dropout(0.15)
-
-CNN Block 3:
-├── Conv2D(128, 3×3, ReLU, same padding)
-├── Conv2D(128, 3×3, ReLU, same padding)
-├── BatchNormalization()
-├── MaxPooling2D(2×2)
-└── Dropout(0.20)
-
-CNN Block 4:
-├── Conv2D(256, 3×3, ReLU, same padding)
-├── Conv2D(256, 3×3, ReLU, same padding)
-├── BatchNormalization()
-├── MaxPooling2D(2×2)
-└── Dropout(0.25)
-
-CNN Block 5:
-├── Conv2D(512, 3×3, ReLU, same padding)
-├── Conv2D(512, 3×3, ReLU, same padding)
-├── BatchNormalization()
-├── MaxPooling2D(2×2)
-└── Dropout(0.30)
-
-Classifier Head:
-├── GlobalAveragePooling2D()
-├── Dense(256, ReLU)
-├── Dropout(0.40)
-└── Dense(2, Softmax)
-_________________________________________________________________
-Total Parameters: ~15M (trainable)
-```
-
-### Architecture Highlights
-- **Progressive Dropout:** Increases from 0.10 → 0.40 to combat overfitting
-- **Batch Normalization:** Stabilizes training and accelerates convergence
-- **Global Average Pooling:** Reduces parameters while maintaining spatial information
-- **Double Convolution:** Enhances feature extraction in each block
-
 ## 📦 Dataset
 
 ### Dataset Specifications
@@ -222,58 +161,13 @@ Total Parameters: ~15M (trainable)
 - **Image Dimensions:** 180×180 pixels (RGB)
 - **Split Method:** Random seed=42 for reproducibility
 
-### Data Preprocessing
-```python
-# Normalization
-pixel_values =  →[1]
-
-# Augmentation (Training only)
-- RandomFlip(horizontal)
-- RandomRotation(±10%)
-- RandomZoom(±10%)
-```
-
-## 🚀 Installation
-
-### Prerequisites
-- Python 3.8+
-- GPU recommended (Google Colab provides free GPU access)
-
-### Quick Setup
-
-```bash
-# Clone the repository
-git clone https://github.com/AthithyaKrishnaa/CNN-Hyperparameter-Analysis-Dogs-Vs-Cats.git
-cd CNN-Hyperparameter-Analysis-Dogs-Vs-Cats
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
-### requirements.txt
-```txt
-tensorflow>=2.19.0
-numpy>=1.24.0
-matplotlib>=3.7.0
-kagglehub>=0.2.0
-```
-
 ## 💻 Usage
 
-### Option 1: Google Colab (Recommended)
+### Google Colab (Recommended)
 1. Click the **Open in Colab** badge above
 2. Navigate to `Runtime → Change runtime type → GPU (T4)`
 3. Run all cells sequentially
 4. Models are automatically saved to `best_cnn_cat_dog.keras`
-
-### Option 2: Local Execution
-```bash
-# Launch Jupyter Notebook
-jupyter notebook CNN_-dogs_vs_cats.ipynb
-
-# Or run directly with Python
-python train_cnn.py --config medium
-```
 
 ### Hyperparameter Customization
 
@@ -375,70 +269,12 @@ callbacks = [
 - High config predictions accurate but training instability is concerning
 - Low config struggles with harder examples (unusual poses, lighting)
 
-## 📁 Project Structure
-
-```
-CNN-Hyperparameter-Analysis-Dogs-Vs-Cats/
-├── CNN_-dogs_vs_cats.ipynb      # Main training notebook
-├── best_cnn_cat_dog.keras       # Saved best model (Medium config)
-├── requirements.txt              # Python dependencies
-├── README.md                     # This file
-│
-├── Results/                      # Training results and visualizations
-│   ├── low_graph.jpg            # Low config training curves
-│   ├── op-low-result.jpg        # Low config predictions
-│   ├── medium_graph.jpg         # Medium config training curves
-│   ├── op-medium-results.jpg    # Medium config predictions
-│   ├── high-_graph.jpg          # High config training curves
-│   └── op-high-results.jpg      # High config predictions
-│
-└── .gitignore                    # Git ignore file
-```
-
-## 🤝 Contributing
-
-Contributions are welcome! Here's how you can help:
-
-1. **Fork the repository**
-2. **Create a feature branch** (`git checkout -b feature/AmazingFeature`)
-3. **Commit your changes** (`git commit -m 'Add some AmazingFeature'`)
-4. **Push to the branch** (`git push origin feature/AmazingFeature`)
-5. **Open a Pull Request**
-
-### Areas for Contribution
-- Testing with different CNN architectures (ResNet, VGG, EfficientNet)
-- Implementing additional hyperparameter combinations
-- Adding cross-validation for more robust evaluation
-- Exploring transfer learning approaches
-- Creating automated hyperparameter tuning (GridSearch/RandomSearch)
-- Improving documentation and tutorials
-
 ## 📧 Contact
 
 **Athithya Krishnaa M**  
 - GitHub: [@AthithyaKrishnaa](https://github.com/AthithyaKrishnaa)
 - LinkedIn: [Connect with me](https://linkedin.com/in/athithyakrishnaa)
 - Colab: [View Live Notebook](https://colab.research.google.com/drive/1NLYmXrofGD9TDMw6ZVNkJJjJBZwrIjvo?usp=sharing)
-
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 🙏 Acknowledgments
-
-- Kaggle for providing the Cat and Dog dataset
-- TensorFlow team for the excellent deep learning framework
-- Google Colab for free GPU resources
-- The deep learning community for continuous inspiration
-
-## 📚 References
-
-1. [Deep Learning Specialization - Andrew Ng](https://www.coursera.org/specializations/deep-learning)
-2. [TensorFlow Documentation](https://www.tensorflow.org/tutorials)
-3. [Hyperparameter Tuning Best Practices](https://arxiv.org/abs/1206.5533)
-4. [Understanding Deep Learning Requires Rethinking Generalization](https://arxiv.org/abs/1611.03530)
-
----
 
 <div align="center">
 
@@ -449,27 +285,4 @@ Made with ❤️ for the Deep Learning Community
 [Report Bug](https://github.com/AthithyaKrishnaa/CNN-Hyperparameter-Analysis-Dogs-Vs-Cats/issues) · [Request Feature](https://github.com/AthithyaKrishnaa/CNN-Hyperparameter-Analysis-Dogs-Vs-Cats/issues)
 
 </div>
-```
-
-## 📋 Setup Instructions
-
-To use this README in your repository:
-
-1. **Create a `Results` folder** in your repository root
-2. **Upload these images** to the `Results` folder:
-   - `low_graph.jpg`
-   - `op-low-result.jpg`
-   - `medium_graph.jpg`
-   - `op-medium-results.jpg`
-   - `high-_graph.jpg`
-   - `op-high-results.jpg`
-
-3. **Update image paths** in README if needed (currently set to root directory)
-
-4. **Create `requirements.txt`**:
-```txt
-tensorflow>=2.19.0
-numpy>=1.24.0
-matplotlib>=3.7.0
-kagglehub>=0.2.0
 ```
