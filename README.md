@@ -136,7 +136,7 @@ SETTINGS = {
 ![High Config Training Graphs](https://github.com/AthithyaKrishnaa/CNN-Hyperparameter-Analysis-Dogs-Vs-Cats/blob/main/high%20_graph.png)
 
 #### Prediction Results
-![High Config Predictions]([op-high-results.jpg](https://github.com/AthithyaKrishnaa/CNN-Hyperparameter-Analysis-Dogs-Vs-Cats/blob/main/op-high-results.png))
+![High Config Predictions](https://github.com/AthithyaKrishnaa/CNN-Hyperparameter-Analysis-Dogs-Vs-Cats/blob/main/op-high-results.png)
 
 **Analysis:**
 - ⚠️ **Fast but Unstable** - High learning rate causes volatility
