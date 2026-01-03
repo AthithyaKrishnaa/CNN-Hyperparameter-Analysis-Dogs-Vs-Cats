@@ -1,4 +1,3 @@
-Perfect! Here's the updated README ready to copy and paste into your GitHub repository. This version includes image references for all three configurations with proper proof visuals:
 
 ```markdown
 # CNN-Hyperparameter-Analysis-Dogs-Vs-Cats
