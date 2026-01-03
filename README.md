@@ -1,7 +1,5 @@
 # CNN-Hyperparameter-Analysis-Dogs-Vs-Cats
 
-# CNN Dogs vs Cats Classification
-
 A comprehensive Convolutional Neural Network implementation for binary image classification of cats and dogs, with extensive hyperparameter experimentation to determine optimal training configurations.
 
 **Author:** Athithya Krishnaa M  
