@@ -11,24 +11,6 @@ A comprehensive deep learning study exploring the impact of hyperparameter confi
 **Author:** Athithya Krishnaa M  
 **Date:** December 29, 2025  
 
-## 📑 Table of Contents
-
-- [Project Overview](#-project-overview)
-- [Best Results](#-best-results)
-- [Training Configurations](#-training-configurations)
-  - [Low Configuration](#low-configuration-️)
-  - [Medium Configuration](#medium-configuration--recommended)
-  - [High Configuration](#high-configuration-)
-- [Model Architecture](#️-model-architecture)
-- [Dataset](#-dataset)
-- [Installation](#-installation)
-- [Usage](#-usage)
-- [Results Analysis](#-results-analysis)
-- [Key Learnings](#-key-learnings)
-- [Project Structure](#-project-structure)
-- [Contributing](#-contributing)
-- [Contact](#-contact)
-
 ## 📊 Project Overview
 
 This research project investigates how different hyperparameter configurations affect Convolutional Neural Network (CNN) performance in binary image classification tasks. By systematically testing Low, Medium, and High configuration profiles, the study provides empirical evidence for optimal hyperparameter selection.
