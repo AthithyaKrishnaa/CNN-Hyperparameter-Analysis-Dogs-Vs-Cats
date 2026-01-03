@@ -255,16 +255,11 @@ callbacks = [
 
 **Athithya Krishnaa M**  
 - GitHub: [@AthithyaKrishnaa](https://github.com/AthithyaKrishnaa)
-- LinkedIn: [Connect with me](https://linkedin.com/in/athithyakrishnaa)
-- Colab: [View Live Notebook](https://colab.research.google.com/drive/1NLYmXrofGD9TDMw6ZVNkJJjJBZwrIjvo?usp=sharing)
+- LinkedIn: [Connect with me](linkedin.com/in/athithya-krishnaa-4bbba0295)
 
 <div align="center">
 
 **⭐ Star this repository if you find it helpful!**
-
-Made with ❤️ for the Deep Learning Community
-
-[Report Bug](https://github.com/AthithyaKrishnaa/CNN-Hyperparameter-Analysis-Dogs-Vs-Cats/issues) · [Request Feature](https://github.com/AthithyaKrishnaa/CNN-Hyperparameter-Analysis-Dogs-Vs-Cats/issues)
 
 </div>
 ```
