@@ -77,7 +77,7 @@ SETTINGS = {
 ```
 
 #### Training Progress
-![Low Config Training Graphs](low_graph.jpg)
+![Low Config Training Graphs](https://github.com/AthithyaKrishnaa/CNN-Hyperparameter-Analysis-Dogs-Vs-Cats/blob/main/low_graph.png)
 
 #### Prediction Results
 ![Low Config Predictions](op-low-result.jpg)
